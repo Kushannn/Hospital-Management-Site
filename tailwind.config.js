@@ -2,8 +2,13 @@
 module.exports = {
   content: ["./include/*.{html,js,php}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        lato:["Lato"]
+       },
+    },
   },
+ 
   plugins: [],
 }
 
