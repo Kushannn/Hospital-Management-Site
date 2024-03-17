@@ -24,7 +24,10 @@ if (isset($_POST['login'])) {
 
 
     // if everything is entered correctly this code will run
-    if (mysqli_num_rows($result) == 1) {
+    if (
+      mysqli_num_rows($result) > 1 ||
+      mysqli_num_rows($result) == 1
+    ) {
       echo "<script> 
       alert('You have successfully logged in as an admin')
      </script>";
@@ -52,10 +55,12 @@ if (isset($_POST['login'])) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin</title>
   <link rel="stylesheet" href="include/output.css">
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="font-poppins">
   <?php
   include("include/header.php");
   ?>
@@ -77,7 +82,7 @@ if (isset($_POST['login'])) {
             if (isset($error['admin'])) {
               $sh = $error['admin'];
 
-              $show = "<h4 class='p-4 my-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-500 dark:text-red-400'>$sh</h4>";
+              $show = "<h4 class='relative block w-full p-4 mb-4 text-base leading-5 text-white bg-red-500 rounded-lg opacity-100'>$sh</h4>";
             } else {
               $show = "";
             }
@@ -99,7 +104,7 @@ if (isset($_POST['login'])) {
           <input type="submit" name="login" class="bg-[#002D74] rounded-xl text-white py-2 hover:scale-105 duration-300" value="Login">
         </form>
 
-        <div class="mt-6 grid grid-cols-3 items-center text-gray-400">
+        <!-- <div class="mt-6 grid grid-cols-3 items-center text-gray-400">
           <hr class="border-gray-400">
           <p class="text-center text-sm">OR</p>
           <hr class="border-gray-400">
@@ -113,7 +118,7 @@ if (isset($_POST['login'])) {
             <path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z" />
           </svg>
           Login with Google
-        </button>
+        </button> -->
 
         <div class="mt-5 text-xs border-b border-[#002D74] py-4 text-[#002D74]">
           <a href="#">Forgot your password?</a>

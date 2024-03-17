@@ -7,14 +7,18 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 
-<body class="text-black font-mono">
+<body class="text-black font-poppins">
 
   <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between b-opacity-0">
     <div class="flex justify-between items-center ">
       <span class="text-2xl font-[Poppins] cursor-pointer">
-        Hospital Management System
+        <!-- Hospital Management System -->
+        <img src="images\logo1.png" alt="image here" class="mix-blend-darken h-14">
       </span>
 
       <span class="text-3xl cursor-pointer mx-2 md:hidden block">

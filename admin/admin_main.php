@@ -9,12 +9,15 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 
-<body class="font-mono">
+<body class="font-poppins">
     <?php
     include("../include/header.php");
-
+    include("../include/connection.php");
     ?>
 
     <div class="container mx-auto sm:px-4 max-w-full">
@@ -23,7 +26,6 @@ session_start();
                 <div class="md:w-1/4 pr-4 pl-4 -mx-12">
                     <?php
                     include("sidenav.php");
-                    include("../include/connection.php");
                     ?>
                 </div>
 
@@ -39,7 +41,8 @@ session_start();
                                 $ad = $_SESSION['admin'];
                                 $query = "SELECT * FROM admin WHERE username    !='$ad'";
                                 $res = mysqli_query($connect, $query);
-                                $output = "
+                                $output = "";
+                                $output .= "
                                 
                                    <table class='w-full max-w-full mb-4 bg-transparent border'>
                                    <tr>
@@ -52,8 +55,7 @@ session_start();
                                 if (mysqli_num_rows($res) < 1) {
                                     $output .= "<tr><td colspan='3' class='text-center'> No New Admin</td></tr>";
                                 }
-
-                                while ($row = mysqli_fetch_array($res)) {
+                                while ($row = mysqli_fetch_assoc($res)) {
                                     $id = $row['id'];
                                     $username = $row['username'];
                                     $output .= "
@@ -61,9 +63,8 @@ session_start();
                                         <td class='border'>$id</td>
                                         <td class='border'>$username</td>
                                         <td class='border'>
-                                           <a href='admin?id=$id' <button id='$id' class='remove inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-red-600 text-white hover:bg-red-700'>Remove</button></a> 
-                                    </td>
-                             
+                                           <a href='admin_main.php?id=$row[id]' class='remove inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-red-600 text-white hover:bg-red-700'>Remove</a> 
+                                        </td>                             
                                 ";
                                 }
 
@@ -74,14 +75,22 @@ session_start();
 
                                 echo $output;
 
-                                if (isset($GET['id'])) {
-                                    $id = $_GET['id'];
-                                    $query = "DELETE FROM admin WHERE id='$id'";
-                                    mysqli_query($connect, $query);
+                                // error_reporting(0);
+                                // $idno = $_GET['id'];
+                                // $query = "DELETE FROM admin WHERE id=$idno";
+                                // $data = mysqli_query($connect, $query);
+
+
+
+                                if (isset($_GET['id'])) {
+                                    $idno = $_GET['id'];
+                                    $query = "DELETE FROM admin WHERE id='$idno'";
+                                    $data = mysqli_query($connect, $query);
                                 }
 
                                 ?>
                             </div>
+
                             <div class="md:w-1/2 pr-4 pl-4">
                                 <?php
                                 if (isset($_POST['add'])) {
@@ -115,7 +124,7 @@ session_start();
 
                                 if (isset($error['u'])) {
                                     $er = $error['u'];
-                                    $show = "<h5 class='p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400'>$er</h5>";
+                                    $show = "<h5 class='relative block w-full p-4 mb-4 text-base leading-5 text-white bg-red-500 rounded-lg opacity-100'>$er</h5>";
                                 } else {
                                     $show = "";
                                 }
@@ -153,6 +162,13 @@ session_start();
         </div>
 
     </div>
+
+    <script>
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+    </script>
+
 </body>
 
 </html>
