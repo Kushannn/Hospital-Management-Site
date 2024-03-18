@@ -7,6 +7,11 @@ module.exports = {
         lato:["Lato"],
         poppins:["Poppins"],
        },
+      variants: {
+        extend: {
+        display: ["group-hover"],
+    },
+},
     },
   },
  

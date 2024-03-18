@@ -9,12 +9,14 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Profile</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 
-<body class="font-poppins">
+<body class="font-poppins ">
 
     <?php
     include("../include/header.php");
@@ -32,7 +34,7 @@ session_start();
 
     ?>
 
-    <div class="container mx-auto sm:px-4 max-w-full">
+    <div class="container mx-auto sm:px-4 max-w-full ">
         <div class="md:w-full pr-4 pl-4">
             <div class="flex flex-wrap">
                 <div class="md:w-1/5 pr-4 pl-4 -ml-12">
@@ -40,11 +42,11 @@ session_start();
                     include("sidenav.php");
                     ?>
                 </div>
-                <div class="md:w-4/5 pr-4 pl-4">
+                <div class="md:w-4/5 pr-4 pl-4 bg-[#40A2E3]  rounded-lg h-[93vh]">
                     <div class="md:w-full pr-4 pl-4">
                         <div class="flex flex-wrap">
-                            <div class="md:w-1/2 pr-4 pl-4">
-                                <p class="text-4xl font-bold my-7 bg-cyan-500"><?php echo $username; ?>'s Profile</p>
+                            <div class="md:w-1/2 pr-4 pl-4 mt-6 bg-[#FFF6E9] rounded-md">
+                                <p class="text-4xl font-bold my-7 underline"><?php echo $username; ?>'s Profile</p>
 
                                 <?php
 
@@ -69,17 +71,17 @@ session_start();
                                     echo  "<img src='img/$profile'  class='md:w-full pr-4 pl-4 h-64' alt=''>";
                                     ?>
                                     <br>
-                                    <div class="mt-10">
+                                    <div class="mt-10 ">
                                         <label class="text-2xl font-lg font-bold">UPDATE PROFILE</label>
                                         <input type="file" name="profile" class="block appearance-none w-full py-1 px-2 my-4 text-base leading-normal bg-white text-gray-800 border-2 border-gray-600 rounded">
                                     </div>
                                     <br>
-                                    <input type="submit" name="update" value="UPDATE" class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-green-500 text-white hover:green-600">
+                                    <input type="submit" name="update" value="UPDATE" class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-[#0D9276]     text-white hover:green-600">
 
                                 </form>
 
                             </div>
-                            <div class="md:w-1/2 pr-4 pl-4">
+                            <div class="md:w-1/2 pr-4 pl-4 bg-[#FFF6E9] rounded-lg mt-6 ">
 
                                 <?php
                                 if (isset($_POST['change'])) {

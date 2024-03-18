@@ -18,7 +18,7 @@
     <div class="flex justify-between items-center ">
       <span class="text-2xl font-[Poppins] cursor-pointer">
         <!-- Hospital Management System -->
-        <img src="images\logo1.png" alt="image here" class="mix-blend-darken h-14">
+        <img src="https://www.hospitalmanagementasia.com/wp-content/uploads/2022/08/Hospital-Management-Logo-Big-PNG.png" alt="image here" class="mix-blend-darken h-12">
       </span>
 
       <span class="text-3xl cursor-pointer mx-2 md:hidden block">
