@@ -40,9 +40,17 @@
           <li class="mx-4 my-6 md:my-0">
            <a href="admin_logout.php" class="text-xl hover:text-cyan-500 duration-500">LOGOUT</a>
           </li>
-
-
         ';
+      } else if (isset($_SESSION['doctor'])) {
+        $user = $_SESSION['admin'];
+        echo '
+          <li class="mx-4 my-6 md:my-0">
+            <a href="index.php"  class="text-xl hover:text-cyan-500 duration-500">' . $user . '</a>
+           </li>
+          <li class="mx-4 my-6 md:my-0">
+           <a href="admin_logout.php" class="text-xl hover:text-cyan-500 duration-500">LOGOUT</a>
+          </li>
+          ';
       } else {
 
         echo '
@@ -72,8 +80,8 @@
         </button>
         <div class="dropdown-menu absolute hidden bg-sky-700 text-white rounded-b-lg pb-2 w-48">
           <a href="adminlogin.php" target="_blank" class="block px-6 py-2 hover:bg-sky-800">Admin Login</a>
+          <a href="doctorlogin.php" target="_blank" class="block px-6 py-2 hover:bg-sky-800">Doctor Login</a>
           <a href="#" class="block px-6 py-2 hover:bg-sky-800">User Login</a>
-          <a href="#" class="block px-6 py-2 hover:bg-sky-800">Doctor Login</a>
         </div>
       </div>
 

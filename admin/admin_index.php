@@ -63,14 +63,26 @@ session_start();
 
                             <div class="md:w-80 w-40 pr-4 pl-4 bg-[#E8A87C] md:h-64 mx-1 font-bold md:text-4xl text-xl my-2 font static transform transition duration-500 h-44 hover:scale-110">
                                 <div class="grid grid-cols-2 gap-4">
-                                    <div>
-                                        <h5 class=" pt-6 text-6xl">0</h5>
-                                        <h5 class="pt-10">Total</h5>
-                                        <h5>Doctor</h5>
-                                    </div>
-                                    <div class="flex justify-center items-center">
-                                        <img src="../images/doctor.png" alt="">
-                                    </div>
+                                    <a href="doctors.php">
+                                        <div>
+                                            <?php
+                                            $doctor = mysqli_query($connect, "SELECT * FROM doctors WHERE status='Approved'");
+                                            $num2 = mysqli_num_rows($doctor);
+                                            ?>
+                                            <h5 class=" pt-6 text-6xl">
+                                                <?php
+                                                echo $num2;
+                                                ?>
+                                            </h5>
+                                            <h5 class="pt-10">Total</h5>
+                                            <h5>Doctor</h5>
+                                        </div>
+                                    </a>
+                                    <a href="doctors.php">
+                                        <div class="flex justify-center items-center">
+                                            <img src="../images/doctor.png" alt="">
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
 
@@ -102,14 +114,28 @@ session_start();
 
                             <div class="md:w-80 w-40 pr-4 pl-4 bg-[#E8A87C] md:h-64 mx-1 font-bold md:text-4xl text-xl my-2 font static transform transition duration-500 h-44 hover:scale-110">
                                 <div class="grid grid-cols-2 gap-4">
-                                    <div>
-                                        <h5 class=" pt-6 text-6xl">0</h5>
-                                        <h5 class="pt-10">Total</h5>
-                                        <h5>Job Request</h5>
-                                    </div>
-                                    <div class="flex justify-center items-center">
-                                        <img src="../images/job.png" alt="image here" class="mix-blend-darken">
-                                    </div>
+                                    <a href="job_request.php">
+                                        <div>
+                                            <?php
+
+                                            $job = mysqli_query($connect, "SELECT * FROM doctors WHERE status='pending'");
+
+                                            $num1 = mysqli_num_rows($job);
+
+
+                                            ?>
+                                            <h5 class=" pt-6 text-6xl"><?php echo $num1; ?></h5>
+                                            <h5 class="pt-10">Total</h5>
+                                            <h5>Job Request</h5>
+                                        </div>
+                                    </a>
+
+                                    <a href="job_request.php">
+                                        <div class="flex justify-center items-center">
+                                            <img src="../images/job.png" alt="image here" class="mix-blend-darken pt-8">
+                                        </div>
+                                    </a>
+
                                 </div>
                             </div>
 
