@@ -10,7 +10,7 @@ $output = "";
 $output .= "
 
 
-<table class='w-full max-w-full mb-4 bg-transparent mt-10'>
+<table class='w-full max-w-full mb-4 bg-transparent mt-10 font-poppins'>
     <tr>
         <th>ID</th>
         <th>Firstname</th>

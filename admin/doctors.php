@@ -11,7 +11,7 @@ session_start();
     <title>Total Doctors</title>
 </head>
 
-<body>
+<body class="font-poppins">
 
     <?php
     include("../include/connection.php");
