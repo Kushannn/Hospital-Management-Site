@@ -83,7 +83,7 @@
         <div class="dropdown-menu absolute hidden bg-sky-700 text-white rounded-b-lg pb-2 w-48">
           <a href="adminlogin.php" target="_blank" class="block px-6 py-2 hover:bg-sky-800">Admin Login</a>
           <a href="doctorlogin.php" target="_blank" class="block px-6 py-2 hover:bg-sky-800">Doctor Login</a>
-          <a href="#" class="block px-6 py-2 hover:bg-sky-800">User Login</a>
+          <a href="patientlogin.php" class="block px-6 py-2 hover:bg-sky-800">User Login</a>
         </div>
       </div>
 
