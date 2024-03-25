@@ -42,13 +42,15 @@
           </li>
         ';
       } else if (isset($_SESSION['doctor'])) {
-        $user = $_SESSION['admin'];
+
+
+        $user = $_SESSION['doctor'];
         echo '
           <li class="mx-4 my-6 md:my-0">
             <a href="index.php"  class="text-xl hover:text-cyan-500 duration-500">' . $user . '</a>
            </li>
           <li class="mx-4 my-6 md:my-0">
-           <a href="admin_logout.php" class="text-xl hover:text-cyan-500 duration-500">LOGOUT</a>
+           <a href="doctor_logout.php" class="text-xl hover:text-cyan-500 duration-500">LOGOUT</a>
           </li>
           ';
       } else {

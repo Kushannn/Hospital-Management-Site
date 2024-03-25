@@ -1,4 +1,5 @@
 <?php
+session_start();
 include("include/connection.php");
 
 if (isset($_POST['login'])) {
@@ -28,7 +29,7 @@ if (isset($_POST['login'])) {
         if (mysqli_num_rows($res)) {
             echo "<script>alert('Logged In')</script>";
             $_SESSION['doctor'] = $uname;
-            // header("Location:")
+            header("Location:doctor/doctor_index.php");
         } else {
             echo "<script>alert('Failed to log in')</script>";
         }

@@ -80,7 +80,7 @@ session_start();
                                     </a>
                                     <a href="doctors.php">
                                         <div class="flex justify-center items-center">
-                                            <img src="../images/doctor.png" alt="">
+                                            <img src="../images/doctor.png" alt="" class="pt-8">
                                         </div>
                                     </a>
                                 </div>
