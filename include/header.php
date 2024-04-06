@@ -53,6 +53,16 @@
            <a href="doctor_logout.php" class="text-xl hover:text-cyan-500 duration-500">LOGOUT</a>
           </li>
           ';
+      } else if (isset($_SESSION['patient'])) {
+        $user = $_SESSION['patient'];
+        echo '
+          <li class="mx-4 my-6 md:my-0">
+            <a href="index.php"  class="text-xl hover:text-cyan-500 duration-500">' . $user . '</a>
+           </li>
+          <li class="mx-4 my-6 md:my-0">
+           <a href="patient_logout.php" class="text-xl hover:text-cyan-500 duration-500">LOGOUT</a>
+          </li>
+          ';
       } else {
 
         echo '

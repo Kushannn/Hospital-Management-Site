@@ -29,64 +29,67 @@ session_start();
                         <h1 class="my-5 font-bold text-4xl">Doctor's Dashboard</h1>
                         <div class="md:w-full pr-4 pl-4">
                             <div class="flex flex-wrap">
-                                <div class="md:w-1/4 pr-4 pl-2 bg-teal-500 h-48 my-6 rounded-lgmd:h-64 mx-1 font-bold md:text-3xl text-xl font static transform transition duration-500 hover:scale-110 rounded-lg">
-                                    <div class="md:w-full pr-4 pl-4">
-                                        <div class="flex flex-wrap">
-                                            <div class="md:w-2/3 pr-4 pl-1 flex flex-wrap">
-                                                <a href="doctor_profile.php" class="flex">
-                                                    <h1 class="text-white my-4">My Profile</h1>
-                                                </a>
+                                <div class="md:w-80 w-40 pr-4 pl-4 bg-[#41B3A3] md:h-64 mx-3 font-bold md:text-4xl text-xl my-2 font static transform transition duration-500 h-44 hover:scale-110 rounded-lg text-white">
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <a href="./doctor_profile.php">
+                                            <div>
+                                                <h5 class="pt-10">My</h5>
+                                                <h5>Profile</h5>
                                             </div>
-
-                                            <div class="md:w-1/3 pr-4 pl-4">
-                                                <a href="doctor_profile.php"><img src="../images/sampleProfile.png" alt="" class="pt-8" height="90">
-                                                </a>
+                                        </a>
+                                        <a href="./doctor_profile.php">
+                                            <div class="flex justify-center items-center">
+                                                <img src="../images/sampleProfile.png" alt="" class="pt-8 mix-blend-darken h-32 w-auto">
                                             </div>
-
-
-                                        </div>
-
+                                        </a>
                                     </div>
+
                                 </div>
 
-                                <div class="md:w-1/4 pr-4 pl-2 bg-teal-500 h-48 my-6 rounded-lgmd:h-64 mx-1 font-bold md:text-3xl text-xl font static transform transition duration-500 hover:scale-110 rounded-lg">
-                                    <div class="md:w-full pr-4 pl-4">
-                                        <div class="flex flex-wrap">
-                                            <div class="md:w-2/3 pr-4 pl-1">
-                                                <h1 class="text-white pt-8">0</h1>
-                                                <h1 class="text-white">Total</h1>
-                                                <h1 class="text-white">Patient's</h1>
+                                <div class="md:w-80 w-40 pr-4 pl-4 bg-[#E8A87C] md:h-64 mx-3 font-bold md:text-4xl text-xl my-2 font static transform transition duration-500 h-44 hover:scale-110 rounded-lg text-white">
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <a href="doctors.php">
+                                            <div>
+                                                <h5 class="pt-10">0</h5>
+                                                <h5 class="pt-10">Total</h5>
+                                                <h5>Patient</h5>
                                             </div>
-                                            <div class="md:w-1/3 pr-4 pl-4">
-                                                <img src="../images/doctor_patient.png" alt="" class="pt-8" height="90">
+                                        </a>
+                                        <a href="doctors.php">
+                                            <div class="flex justify-center items-center">
+                                                <img src="../images/doctor_patient.png" alt="" class="pt-8 ">
                                             </div>
-                                        </div>
-
+                                        </a>
                                     </div>
+
                                 </div>
 
-                                <div class="md:w-1/4 pr-4 pl-2 bg-teal-500 h-48 my-6 rounded-lgmd:h-64 mx-1 font-bold md:text-3xl text-xl font static transform transition duration-500 hover:scale-110 rounded-lg">
-                                    <div class="md:w-full pr-4 pl-4">
-                                        <div class="flex flex-wrap">
-                                            <div class="md:w-2/3 pr-4 pl-1">
-                                                <h1 class="text-white pt-8 pb-4">0</h1>
-                                                <h1 class="text-white">Total</h1>
-                                                <h1 class="text-white">Appointment's</h1>
+                                <div class="md:w-80 w-40 pr-4 pl-4 bg-[#C38D9E] md:h-64 mx-3 font-bold md:text-4xl text-xl my-2 font static transform transition duration-500 h-44 hover:scale-110 rounded-lg text-white">
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <a href="doctors.php">
+                                            <div>
+                                                <h5 class="pt-10">0</h5>
+                                                <h5 class="pt-10">Total</h5>
+                                                <h5>Appointment's</h5>
                                             </div>
-                                            <div class="md:w-1/3 pr-4 pl-4">
-                                                <img src="../images/sampleProfile.png" alt="" class="pt-8">
+                                        </a>
+                                        <a href="doctors.php">
+                                            <div class="flex justify-center items-center">
+                                                <img src="../images/appointment1.jpeg" alt="" class="pt-8 mix-blend-darken">
                                             </div>
-                                        </div>
-
+                                        </a>
                                     </div>
+
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
+
+    </div>
     </div>
 </body>
 

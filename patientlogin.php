@@ -3,35 +3,25 @@ session_start();
 include("include/connection.php");
 
 if (isset($_POST['login'])) {
+
     $uname = $_POST['uname'];
-    $password = $_POST['pass'];
+    $pass = $_POST['pass'];
 
     $error = array();
 
-    $q = "SELECT * FROM doctors WHERE username='$uname' AND password='$password' ";
-    $qq = mysqli_query($connect, $q);
-
-    $row = mysqli_fetch_array($qq);
-
     if (empty($uname)) {
         $error['login'] = "Enter Username";
-    } else if (empty($password)) {
+        // echo "<script>alert(`Enter username`)</script>";
+    } else if (empty($pass)) {
         $error['login'] = "Enter Password";
-    } else if ($row['status'] == "pending") {
-        $error['login'] = "Please wait for the admin to authorize";
-    } else if ($row['status'] == "rejected") {
-        $error['login'] = "The admin has rejected";
-    }
-
-    if (count($error) == 0) {
-        $query = "SELECT * FROM doctors WHERE username='$uname' AND password='$password' ";
+        // echo "<script>alert(`Enter password`)</script>";
+    } else {
+        $query = "SELECT * FROM patient WHERE username='$uname' AND password='$pass'";
         $res = mysqli_query($connect, $query);
-        if (mysqli_num_rows($res)) {
-            echo "<script>alert('Logged In')</script>";
-            $_SESSION['doctor'] = $uname;
-            header("Location:doctor/doctor_index.php");
-        } else {
-            echo "<script>alert('Failed to log in')</script>";
+
+        if (mysqli_num_rows($res) == 1) {
+            header("Location:patient/patient_index.php");
+            $_SESSION['patient'] = $uname;
         }
     }
 }
@@ -51,7 +41,7 @@ if (isset($error['login'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctor Login</title>
+    <title>Patient Login</title>
     <link rel="stylesheet" href="include/output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

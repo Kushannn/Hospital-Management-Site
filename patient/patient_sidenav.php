@@ -15,20 +15,20 @@
 <body class="box-border m-0 font-poppins">
     <!--sidebar-->
     <div class="flex flex-col pl-0 mb-0 border rounded border-gray-300 bg-blue-400 md:w-48 md:h-screen w-lvw">
-        <a href="admin_index.php" class="relative block py-3 px-6 -mb-px border border-r-0 border-l-0 border-gray-300 no-underline w-full bg-blue-400 text-white md:transform md:transition md:duration-500 md:hover:scale-110 md:h-16 md:text-lg transform transition duration-500 hover:scale-110 ">
+        <a href="patient_index.php" class="relative block py-3 px-6 -mb-px border border-r-0 border-l-0 border-gray-300 no-underline w-full bg-blue-400 text-white md:transform md:transition md:duration-500 md:hover:scale-110 md:h-16 md:text-lg transform transition duration-500 hover:scale-110 ">
             Dashboard
         </a>
-        <a href="admin_profile.php" class="relative block py-3 px-6 -mb-px border border-r-0 border-l-0 border-gray-300 no-underline w-full bg-blue-400 text-white md:transform md:transition md:duration-500 md:hover:scale-110 md:h-16 md:text-lg transform transition duration-500 hover:scale-110 ">
+        <a href="patient_profile.php" class="relative block py-3 px-6 -mb-px border border-r-0 border-l-0 border-gray-300 no-underline w-full bg-blue-400 text-white md:transform md:transition md:duration-500 md:hover:scale-110 md:h-16 md:text-lg transform transition duration-500 hover:scale-110 ">
             Profile
         </a>
-        <a href="admin.php" class="relative block py-3 px-6 -mb-px border border-r-0 border-l-0 border-gray-300 no-underline w-full bg-blue-400 text-white transform transition duration-500 hover:scale-110 h-16 text-lg  ">
-            Administrators
-        </a>
-        <a href="doctors.php" class="relative block py-3 px-6 -mb-px border border-r-0 border-l-0 border-gray-300 no-underline w-full bg-blue-400 text-white transform transition duration-500 hover:scale-110 h-16 text-lg">
-            Doctors
+        <a href="doctors.php" class="relative block py-1 px-6 -mb-px border border-r-0 border-l-0 border-gray-300 no-underline w-full bg-blue-400 text-white transform transition duration-500 hover:scale-110 h-16 text-lg">
+            Book Appointments
         </a>
         <a href="" class="relative block py-3 px-6 -mb-px border border-r-0 border-l-0 border-gray-300 no-underline w-full bg-blue-400 text-white transform transition duration-500 hover:scale-110 h-16 text-lg">
-            Patients
+            Reports
+        </a>
+        <a href="" class="relative block py-3 px-6 -mb-px border border-r-0 border-l-0 border-gray-300 no-underline w-full bg-blue-400 text-white transform transition duration-500 hover:scale-110 h-16 text-lg">
+            Invoice
         </a>
     </div>
     <!--sidebar ends-->
