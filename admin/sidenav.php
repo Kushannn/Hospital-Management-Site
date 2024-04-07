@@ -27,7 +27,7 @@
         <a href="doctors.php" class="relative block py-3 px-6 -mb-px border border-r-0 border-l-0 border-gray-300 no-underline w-full bg-blue-400 text-white transform transition duration-500 hover:scale-110 h-16 text-lg">
             Doctors
         </a>
-        <a href="" class="relative block py-3 px-6 -mb-px border border-r-0 border-l-0 border-gray-300 no-underline w-full bg-blue-400 text-white transform transition duration-500 hover:scale-110 h-16 text-lg">
+        <a href="./patient_total.php" class="relative block py-3 px-6 -mb-px border border-r-0 border-l-0 border-gray-300 no-underline w-full bg-blue-400 text-white transform transition duration-500 hover:scale-110 h-16 text-lg">
             Patients
         </a>
     </div>

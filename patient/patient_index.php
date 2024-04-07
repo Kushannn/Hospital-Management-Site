@@ -50,14 +50,14 @@ session_start();
 
                             <div class="md:w-80 rounded-2xl w-40 pr-4 pl-4 bg-[#E8A87C] md:h-64 mx-1 font-bold md:text-3xl text-xl my-2 font static transform transition duration-500 h-44 hover:scale-110">
                                 <div class="grid grid-cols-2 gap-4 ">
-                                    <a href="admin_main.php">
+                                    <a href="./appointment.php">
                                         <div>
                                             <h5 class="pt-20">Book</h5>
                                             <h5>Your</h5>
                                             <h5>Appointment</h5>
                                         </div>
                                     </a>
-                                    <a href="admin_main.php">
+                                    <a href="./appointment.php">
                                         <div class="flex justify-center items-center">
                                             <img src="../images/admin.webp" alt="" class="pt-6">
                                         </div>
@@ -68,13 +68,13 @@ session_start();
 
                             <div class="md:w-80 rounded-2xl w-40 pr-4 pl-4 bg-[#C38D9E] md:h-64 mx-1 font-bold md:text-4xl text-xl my-2 font static transform transition duration-500 h-44 hover:scale-110">
                                 <div class="grid grid-cols-2 gap-4 ">
-                                    <a href="admin_main.php">
+                                    <a href="./invoice.php">
                                         <div>
                                             <h5 class="pt-10">My</h5>
                                             <h5>Invoice</h5>
                                         </div>
                                     </a>
-                                    <a href="admin_main.php">
+                                    <a href="./invoice.php">
                                         <div class="flex justify-center items-center">
                                             <img src="../images/admin.webp" alt="" class="pt-8">
                                         </div>

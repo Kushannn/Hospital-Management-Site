@@ -88,27 +88,44 @@ session_start();
 
                             <div class="md:w-80 w-40 pr-4 pl-4 bg-[#C38D9E] md:h-64 mx-1 font-bold md:text-4xl text-xl my-2 font static transform transition duration-500 h-44 hover:scale-110">
                                 <div class="grid grid-cols-2 gap-4">
-                                    <div>
-                                        <h5 class=" pt-6 text-6xl">0</h5>
-                                        <h5 class="pt-10">Total</h5>
-                                        <h5>Patient</h5>
-                                    </div>
-                                    <div class="flex justify-center items-center">
-                                        <img src="../images/patient.png" alt="">
-                                    </div>
+                                    <a href="./patient_total.php">
+                                        <div>
+                                            <?php
+                                            $p = mysqli_query($connect, "SELECT * FROM patient");
+                                            $pp = mysqli_num_rows($p);
+                                            ?>
+                                            <h5 class=" pt-6 text-6xl"><?php echo $pp; ?></h5>
+                                            <h5 class="pt-10">Total</h5>
+                                            <h5>Patient</h5>
+                                        </div>
+                                    </a>
+                                    <a href="./patient_total.php">
+                                        <div class="flex justify-center items-center">
+                                            <img src="../images/patient.png" alt="">
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
 
                             <div class="md:w-80 w-40 pr-4 pl-4 bg-[#C38D9E] md:h-64 mx-1 font-bold md:text-4xl text-xl my-2 font static transform transition duration-500 h-44 hover:scale-110">
                                 <div class="grid grid-cols-2 gap-4">
-                                    <div>
-                                        <h5 class=" pt-6 text-6xl">0</h5>
-                                        <h5 class="pt-10">Total</h5>
-                                        <h5>Report</h5>
-                                    </div>
-                                    <div class="flex justify-center items-center">
-                                        <img src="../images/report.jpeg" alt="image here" class="mix-blend-darken">
-                                    </div>
+                                    <a href="./report.php">
+                                        <div>
+                                            <?php
+                                            $re = mysqli_query($connect, "SELECT * FROM report");
+
+                                            $rep = mysqli_num_rows($re);
+                                            ?>
+                                            <h5 class=" pt-6 text-6xl"><?php echo $rep; ?></h5>
+                                            <h5 class="pt-10">Total</h5>
+                                            <h5>Report</h5>
+                                        </div>
+                                    </a>
+                                    <a href="./report.php">
+                                        <div class="flex justify-center items-center">
+                                            <img src="../images/report.jpeg" alt="image here" class="mix-blend-darken">
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
 
@@ -141,14 +158,24 @@ session_start();
 
                             <div class="md:w-80 w-40 pr-4 pl-4 bg-[#41B3A3] md:h-64 mx-1 font-bold md:text-4xl text-xl my-2 font static transform transition duration-500 h-44 hover:scale-110">
                                 <div class="grid grid-cols-2 gap-4">
-                                    <div>
-                                        <h5 class=" pt-6 text-6xl">0</h5>
-                                        <h5 class="pt-10">Total</h5>
-                                        <h5>Income</h5>
-                                    </div>
-                                    <div class="flex justify-center items-center">
-                                        <img src="../images/income.png" alt="image here" class="mix-blend-darken">
-                                    </div>
+                                    <a href="./income.php">
+                                        <div>
+                                            <?php
+                                            $in = mysqli_query($connect, "SELECT sum(amount_paid) as profit FROM income ");
+
+                                            $row = mysqli_fetch_array($in);
+                                            $inc = $row['profit'];
+                                            ?>
+                                            <h5 class=" pt-6 text-6xl"><?php echo "₹" . $inc; ?></h5>
+                                            <h5 class="pt-10">Total</h5>
+                                            <h5>Income</h5>
+                                        </div>
+                                    </a>
+                                    <a href="./income.php">
+                                        <div class="flex justify-center items-center">
+                                            <img src="../images/income.png" alt="image here" class="mix-blend-darken">
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
