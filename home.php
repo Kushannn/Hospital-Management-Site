@@ -1,5 +1,5 @@
 <?php
-include("include/header.php");
+include("./include/header.php");
 ?>
 
 <!DOCTYPE html>
@@ -31,7 +31,7 @@ include("include/header.php");
           <div>
             <h1 class="text-white text-4xl md:text-5xl xl:text-6xl font-bold leading-tight">A better life starts with a
               healthy life.</h1>
-            <p class="text-blue-100 text-xl md:text-2xl leading-snug mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit natus deserunt ut dicta odio consequuntur accusamus quam quas repudiandae non tempore, omnis ad at beatae sequi accusantium impedit possimus, dolor a veniam tempora. Dignissimos, error..</p>
+            <p class="text-blue-100 text-xl md:text-2xl leading-snug my-8 text-justify">Explore our website to learn more about our comprehensive range of medical services, advanced technology, and patient-centered approach to healthcare. Whether you're seeking information about our specialties, scheduling appointments, or accessing resources for your health journey, you'll find everything you need right here.</p>
             <!-- <a href="#" class="px-8 py-4 bg-teal-500 text-white rounded inline-block mt-8 font-semibold">Book
               Appointment</a> -->
           </div>
@@ -45,30 +45,54 @@ include("include/header.php");
 
     <section class="relative px-4 py-16 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 lg:py-32" id="Service">
       <h2 class="text-5xl leading-tight font-bold relative -top-10 underline">Our Services</h2>
-      <div class="flex flex-col lg:flex-row lg:-mx-8">
+      <div class="flex flex-col lg:flex-row lg:-mx-8 text-justify">
         <div class="w-full lg:w-1/2 lg:px-8">
-          <h2 class="text-3xl leading-tight font-bold mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto doloribus voluptate nulla tenetur quos! Animi?</h2>
+
+
+          <div class="md:flex mt-1">
+            <div>
+              <div class="w-10 h-10 bg-blue-600 rounded-full"></div>
+            </div>
+            <div class="md:ml-8 mt-4 md:mt-0 ">
+              <h4 class="text-xl font-bold leading-tight">Specialized Medical Services:</h4>
+              <p class="mt-2 leading-relaxed ">We offer a wide array of specialized medical services delivered by experts in their respective fields. Whether you require cardiology, oncology, orthopedics, neurology, or any other specialty care, our dedicated specialists are committed to providing personalized treatment plans to address your unique health concerns..</p>
+            </div>
+          </div>
+
+
+          <div class="md:flex mt-8">
+            <div>
+              <div class="w-10 h-10 bg-blue-600 rounded-full"></div>
+            </div>
+            <div class="md:ml-8 mt-4 md:mt-0">
+              <h4 class="text-xl font-bold leading-tight">Mental Health & Rehabilitation Services:
+              </h4>
+              <p class="mt-2 leading-relaxed">Our rehabilitation services are designed to help patients recover and regain function following injury, surgery, or illness. Our team of physical therapists, occupational therapists, and speech therapists work collaboratively to develop personalized treatment plans to address each patient's unique needs and goals.</p>
+            </div>
+          </div>
+
+          <!-- <h2 class="text-3xl leading-tight font-bold mt-4">Our commitment extends beyond merely treating ailments – we are dedicated to providing you with a comprehensive array of services designed to meet your every healthcare need under one roof.</h2>
           <p class="text-lg mt-4 font-semibold">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ratione?</p>
           <p class="mt-2 leading-relaxed">Donec convallis sollicitudin facilisis. Integer nisl ligula, accumsan non
             tincidunt ac, imperdiet in enim.
-            Donec efficitur ullamcorper metus, eu venenatis nunc. Nam eget neque tempus, mollis sem a, faucibus mi.</p>
+            Donec efficitur ullamcorper metus, eu venenatis nunc. Nam eget neque tempus, mollis sem a, faucibus mi.</p> -->
         </div>
 
         <div class="w-full lg:w-1/2 lg:px-8 mt-12 lg:mt-0">
 
           <div class="md:flex">
             <div>
-              <div class="w-16 h-16 bg-blue-600 rounded-full"></div>
+              <div class="w-10 h-10 bg-blue-600 rounded-full"></div>
             </div>
             <div class="md:ml-8 mt-4 md:mt-0">
               <h4 class="text-xl font-bold leading-tight">Everything You Need Under One Roof</h4>
-              <p class="mt-2 leading-relaxed">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi dolores ipsam rerum dignissimos sed quod soluta eveniet neque laborum quidem, sunt impedit, dolorum temporibus, distinctio repudiandae maiores officiis illo magni..</p>
+              <p class="mt-2 leading-relaxed">We understand the importance of convenience and accessibility when it comes to your healthcare needs. That's why we're proud to offer a comprehensive range of services all under one roof, making it easier for you to access the care you need when you need it.</p>
             </div>
           </div>
 
           <div class="md:flex mt-8">
             <div>
-              <div class="w-16 h-16 bg-blue-600 rounded-full"></div>
+              <div class="w-10 h-10 bg-blue-600 rounded-full"></div>
             </div>
             <div class="md:ml-8 mt-4 md:mt-0">
               <h4 class="text-xl font-bold leading-tight">Our Patient-Focused Approach</h4>
@@ -88,7 +112,7 @@ include("include/header.php");
 
             <h4 class="text-xl font-bold mt-4">Intuitive Interface</h4>
             <p class="mt-1">A user friendly interface </p>
-            <a href="#" class="block mt-4 underline underline-offset-4">Read More</a>
+            <!-- <a href="#" class="block mt-4 underline underline-offset-4">Read More</a> -->
           </div>
         </div>
 
@@ -98,7 +122,7 @@ include("include/header.php");
 
             <h4 class="text-xl font-bold mt-4">Patient Records</h4>
             <p class="mt-1">All your previous records . One tap away.</p>
-            <a href="#" class="block mt-4 underline underline-offset-4">Read More</a>
+            <!-- <a href="#" class="block mt-4 underline underline-offset-4">Read More</a> -->
           </div>
         </div>
 
@@ -107,8 +131,8 @@ include("include/header.php");
             <img src="images/prescription.png" alt="" class="h-20 mx-auto">
 
             <h4 class="text-xl font-bold mt-4">E-Prescriptions</h4>
-            <p class="mt-1">Connect with a doctor online.</p>
-            <a href="#" class="block mt-4 underline underline-offset-4">Read More</a>
+            <p class="my-4">Connect with a doctor online.</p>
+            <!-- <a href="#" class="block mt-4 underline underline-offset-4">Read More</a> -->
           </div>
         </div>
 
@@ -118,7 +142,7 @@ include("include/header.php");
 
             <h4 class="text-xl font-bold mt-4">Appointments</h4>
             <p class="mt-1">Book an appointment anytime ,from anywhere.</p>
-            <a href="#" class="block mt-4 underline underline-offset-4">Read More</a>
+            <!-- <a href="#" class="block mt-4 underline underline-offset-4">Read More</a> -->
           </div>
         </div>
       </div>
@@ -126,7 +150,7 @@ include("include/header.php");
     <!-- end about -->
 
     <!-- start testimonials -->
-    <section class="relative bg-gray-100 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-16 lg:py-32">
+    <!-- <section class="relative bg-gray-100 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-16 lg:py-32">
       <div class="flex flex-col lg:flex-row lg:-mx-8">
         <div class="w-full lg:w-1/2 lg:px-8">
           <h2 class="text-3xl leading-tight font-bold mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, id.</h2>
@@ -135,14 +159,21 @@ include("include/header.php");
             in. Donec convallis sollicitudin facilisis. Integer nisl ligula, accumsan non tincidunt ac, imperdiet in
             enim. Donec efficitur ullamcorper metus, eu venenatis nunc. Nam eget neque tempus, mollis sem a, faucibus
             mi.</p>
-        </div>
+        </div> -->
 
-        <div class="w-full md:max-w-md md:mx-auto lg:w-1/2 lg:px-8 mt-12 mt:md-0">
+    <?php
+    include("./include/customerReview.php");
+
+    ?>
+
+
+
+    <!-- <div class="w-full md:max-w-md md:mx-auto lg:w-1/2 lg:px-8 mt-12 mt:md-0">
           <div class="bg-gray-400 w-full h-72 rounded-lg"></div>
 
-          <p class="italic text-sm mt-2 text-center">Aenean ante nisi, gravida non mattis semper.</p>
+          
         </div>
-      </div>
+      </div> -->
     </section>
     <!-- end testimonials -->
 
@@ -150,34 +181,38 @@ include("include/header.php");
     <section id="Blogs" class="relative bg-white px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-32">
       <div class="">
         <h2 class="text-3xl leading-tight font-bold">Health Blog</h2>
-        <p class="text-gray-600 mt-2 md:max-w-lg">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-          turpis egestas.</p>
+        <p class="text-gray-600 md:max-w-lg m-4">Stay updated with the latest news in the medical industry and keep yourself updated daily with these blogs</p>
 
-        <a href="#" title="" class="inline-block text-teal-500 font-semibold mt-6 mt:md-0">View All Posts</a>
+        <!-- <a href="#" title="" class="inline-block text-teal-500 font-semibold mt-6 mt:md-0">View All Posts</a> -->
       </div>
+
 
       <div class="md:flex mt-12 md:-mx-4">
         <div class="md:px-4 md:w-1/2 xl:w-1/4">
           <div class="bg-white rounded border border-gray-300">
             <div class="w-full h-48 overflow-hidden bg-gray-300">
-              <img src="images/download.png" class="w-full h-full">
+              <a href="https://www.acefitness.org/resources/pros/expert-articles/" target="_blank">
+                <img src="https://www.purdueglobal.edu/blog/student-life/health-blogs-header.jpg" class="w-full h-full">
+              </a>
             </div>
             <div class="p-4">
-              <div class="flex items-center text-sm">
-                <span class="text-teal-500 font-semibold">Business</span>
-                <span class="ml-4 text-gray-600">29 Nov, 2019</span>
-              </div>
-              <p class="text-lg font-semibold leading-tight mt-4">Card Title</p>
-              <p class="text-gray-600 mt-1">This card has supporting text below as a natural lead-in to additional content.
-              </p>
-              <div class="flex items-center mt-4">
-                <div class="w-8 h-8 rounded-full overflow-hidden bg-gray-300">
-                  <img src="images/person2.jpeg" class="h-full w-full">
+              <a href="https://www.acefitness.org/resources/pros/expert-articles/" target="_blank">
+                <div class="flex items-center text-sm">
+                  <span class="text-teal-500 font-semibold">Health</span>
+                  <span class="ml-4 text-gray-600">20 Oct, 2023</span>
                 </div>
-                <div class="ml-4">
-                  <p class="text-gray-600">By <span class="text-gray-900 font-semibold">Abby Sims</span></p>
+                <!-- <p class="text-xl font-bold leading-tight mt-4 underline">Card Title</p> -->
+                <p class="text-gray-900 my-4 font-bold hover:text-gray-400">How Behavioral Science Can Help Your Clients and Participants Stick to Their Goals.
+                </p>
+                <div class="flex items-center mt-4">
+                  <div class="w-8 h-8 rounded-full overflow-hidden bg-gray-300">
+                    <img src="images/person2.jpeg" class="h-full w-full">
+                  </div>
+                  <div class="ml-4">
+                    <p class="text-gray-600">By <span class="text-gray-900 font-semibold"> Eliza Kingsford</span></p>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -185,49 +220,27 @@ include("include/header.php");
         <div class="md:px-4 md:w-1/2 xl:w-1/4 mt-4 md:mt-0">
           <div class="bg-white rounded border border-gray-300 ">
             <div class="w-full h-48 overflow-hidden bg-gray-300">
-              <img src="images/research1.jpg" class="w-full h-full">
+              <a href="https://artofhealthyliving.com/the-connection-between-air-pollution-and-respiratory-diseases/" target="_blank">
+                <img src="https://www.pranaair.com/wp-content/uploads/2018/08/1.15442.jpg" class="w-full h-full">
+              </a>
             </div>
             <div class="p-4">
               <div class="flex items-center text-sm">
-                <span class="text-teal-500 font-semibold">Business</span>
-                <span class="ml-4 text-gray-600">29 Nov, 2019</span>
+                <span class="text-teal-500 font-semibold">Pollution</span>
+                <span class="ml-4 text-gray-600">6 April, 2024</span>
               </div>
-              <p class="text-lg font-semibold leading-tight mt-4">Card Title</p>
-              <p class="text-gray-600 mt-1">This card has supporting text below as a natural lead-in to additional
-                content.
-              </p>
-              <div class="flex items-center mt-4">
-                <div class="w-8 h-8 rounded-full overflow-hidden bg-gray-300">
-                  <img src="images/person1.jpeg" alt="">
-                </div>
-                <div class="ml-4">
-                  <p class="text-gray-600">By <span class="text-gray-900 font-semibold">Abby Sims</span></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="md:px-4 md:w-1/2 xl:w-1/4 mt-4 md:mt-0">
-          <div class="bg-white rounded border border-gray-300 ">
-            <div class="w-full h-48 overflow-hidden bg-gray-300">
-              <img src="images/blog3.jpg" class="w-full h-full">
-            </div>
-            <div class="p-4">
-              <div class="flex items-center text-sm">
-                <span class="text-teal-500 font-semibold">Business</span>
-                <span class="ml-4 text-gray-600">29 Nov, 2019</span>
-              </div>
-              <p class="text-lg font-semibold leading-tight mt-4">Card Title</p>
-              <p class="text-gray-600 mt-1">This card has supporting text below as a natural lead-in to additional
-                content.
-              </p>
+              <!-- <p class="text-lg font-semibold leading-tight mt-4">Card Title</p> -->
+              <a href="https://artofhealthyliving.com/the-connection-between-air-pollution-and-respiratory-diseases/" target="_blank">
+                <p class="text-gray-900 my-4 font-bold hover:text-gray-400">
+                  THE CONNECTION BETWEEN AIR POLLUTION AND RESPIRATORY DISEASES
+                </p>
+              </a>
               <div class="flex items-center mt-4">
                 <div class="w-8 h-8 rounded-full overflow-hidden bg-gray-300">
                   <img src="images/person1.jpeg" alt="">
                 </div>
                 <div class="ml-4">
-                  <p class="text-gray-600">By <span class="text-gray-900 font-semibold">Abby Sims</span></p>
+                  <p class="text-gray-600">By <span class="text-gray-900 font-semibold">Sarah Thompson</span></p>
                 </div>
               </div>
             </div>
@@ -237,17 +250,49 @@ include("include/header.php");
         <div class="md:px-4 md:w-1/2 xl:w-1/4 mt-4 md:mt-0">
           <div class="bg-white rounded border border-gray-300 ">
             <div class="w-full h-48 overflow-hidden bg-gray-300">
-              <img src="images/blog4.jpeg" class="w-full h-full">
+              <a href="https://www.proclinical.com/blogs/2023-4/what-is-mrna-and-how-do-mrna-vaccines-work" target="_blank">
+                <img src="https://attraxcdnprod1-freshed3dgayb7c3.z01.azurefd.net/1481078/891f3803-db1b-4640-d2fa-08d55bf88b78/2022.14683-2022.2-rc/img/le2ldG_pGEIg7gjbRwgRfg/Blog+-+Group+-+What+is+mRNA+and+how+do+mRNA+vaccines+work.png?v=67fef0e1f9c4898ad5ad88e28ddbf441" class="w-full h-full">
+              </a>
             </div>
             <div class="p-4">
               <div class="flex items-center text-sm">
-                <span class="text-teal-500 font-semibold">Business</span>
-                <span class="ml-4 text-gray-600">29 Nov, 2019</span>
+                <span class="text-teal-500 font-semibold">Inventions</span>
+                <span class="ml-4 text-gray-600">24 Mar, 2023</span>
               </div>
-              <p class="text-lg font-semibold leading-tight mt-4">Card Title</p>
-              <p class="text-gray-600 mt-1">This card has supporting text below as a natural lead-in to additional
-                content.
-              </p>
+              <!-- <p class="text-lg font-semibold leading-tight mt-4">Card Title</p> -->
+              <a href="https://www.proclinical.com/blogs/2023-4/what-is-mrna-and-how-do-mrna-vaccines-work" target="_blank">
+                <p class=" text-gray-900 my-10 font-bold hover:text-gray-400">What is mRNA and how do mRNA vaccines work?
+                </p>
+              </a>
+              <div class="flex items-center mt-4">
+                <div class="w-8 h-8 rounded-full overflow-hidden bg-gray-300">
+                  <img src="images/person1.jpeg" alt="">
+                </div>
+                <div class="ml-4">
+                  <p class="text-gray-600">By <span class="text-gray-900 font-semibold">Hannah Burke</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:px-4 md:w-1/2 xl:w-1/4 mt-4 md:mt-0">
+          <div class="bg-white rounded border border-gray-300 ">
+            <div class="w-full h-48 overflow-hidden bg-gray-300">
+              <a href="https://infomeddnews.com/the-future-of-biotechnology-insights-into-cutting-edge-developments/" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbZ71fCCCctWt7f4USt6yGO-4dk7qGD8lyQG2zomIVOg&s" class="w-full h-full">
+              </a>
+            </div>
+            <div class="p-4">
+              <div class="flex items-center text-sm">
+                <span class="text-teal-500 font-semibold">Technology</span>
+                <span class="ml-4 text-gray-600">4 Apr, 2024</span>
+              </div>
+              <!-- <p class="text-lg font-semibold leading-tight mt-4">Card Title</p> -->
+              <a href="https://infomeddnews.com/the-future-of-biotechnology-insights-into-cutting-edge-developments/" target="_blank">
+                <p class="text-gray-900 hover:text-gray-400 my-4 font-bold">The Future of Biotechnology: Insights Into Cutting-Edge Developments
+                </p>
+              </a>
               <div class="flex items-center mt-4">
                 <div class="w-8 h-8 rounded-full overflow-hidden bg-gray-300">
                   <img src="images/person1.jpeg" alt="">
@@ -319,7 +364,7 @@ include("include/header.php");
                   </svg>
                 </span>
                 <span class="ml-3">
-                  1985 Kerry Way, Whittier, CA, USA
+                  69 , Premchand Nagar , Judges Bunglow Road , Ahmedabad
                 </span>
               </a>
             </li>
@@ -345,7 +390,7 @@ include("include/header.php");
                   </svg>
                 </span>
                 <span class="ml-3">
-                  +1 562-789-1935
+                  +91 562-789-1935
                 </span>
               </a>
             </li>
@@ -357,7 +402,7 @@ include("include/header.php");
                   </svg>
                 </span>
                 <span class="ml-3">
-                  dentalpro@example.com
+                  hms@gmail.com
                 </span>
               </a>
             </li>

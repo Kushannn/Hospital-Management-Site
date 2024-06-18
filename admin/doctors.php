@@ -11,7 +11,7 @@ session_start();
     <title>Total Doctors</title>
 </head>
 
-<body class="font-poppins">
+<body class="font-poppins overflow-hidden">
 
     <?php
     include("../include/connection.php");
@@ -27,7 +27,7 @@ session_start();
                     ?>
                 </div>
                 <div class="md:w-4/5 pr-4 pl-4">
-                    <h1 class="text-center text-4xl font-bold my-6 underline">Total Doctors</h1>
+                    <h1 class="text-center text-4xl font-bold my-6 underline ">Total Doctors</h1>
                     <?php
 
                     $query = "SELECT * FROM doctors WHERE status='Approved' ORDER BY data_reg ASC";
@@ -39,25 +39,25 @@ session_start();
                     $output .= "
 
 
-                    <table class='w-full max-w-full mb-4 bg-transparent mt-10 text-md'>
-                        <tr>
-                            <th class='border'>ID</th>
-                            <th class='border'>Firstname</th>
-                            <th class='border'>Surname</th>
-                            <th class='border'>Username</th>
-                            <th class='border'>Email</th>
-                            <th class='border'>Gender</th>
-                            <th class='border'>Phone</th>
-                            <th class='border'>Speciality</th>
-                            <th class='border'>Salary</th>
-                            <th class='border'>Date Registered</th>
-                            <th class='border'>Action</th>
+                    <table class='w-full max-w-full mb-4 bg-transparent mt-10 text-md shadow-xl'>
+                        <tr class='bg-blue-400 text-white'>
+                            <th class='border p-2 text-lg'>ID</th>
+                            <th class='border p-2 text-lg'>Firstname</th>
+                            <th class='border p-2 text-lg'>Surname</th>
+                            <th class='border p-2 text-lg'>Username</th>
+                            <th class='border p-2 text-lg'>Email</th>
+                            <th class='border p-2 text-lg'>Gender</th>
+                            <th class='border p-2 text-lg'>Phone</th>
+                            <th class='border p-2 text-lg'>Speciality</th>
+                            <th class='border p-2 text-lg'>Salary</th>
+                            <th class='border p-2 text-lg'>Date Registered</th>
+                            <th class='border p-2 text-lg'>Action</th>
                         </tr>";
 
                     if (mysqli_num_rows($res) < 1) {
                         $output .= "
                          <tr>
-                            <td colspan='10' class='text-center text-xl'> 
+                            <td colspan='10' class='text-center text-xl p-2'> 
                                  No Job Requests Yet.
                             </td>
                          </tr>";
@@ -67,17 +67,17 @@ session_start();
                     while ($row = mysqli_fetch_array($res)) {
                         $output .= "
                             <tr>
-                            <td class='border'>" . $row['id'] . "</td>
-                            <td class='border'>" . $row['firstname'] . "</td>
-                            <td class='border'>" . $row['surname'] . "</td>
-                            <td class='border'>" . $row['username'] . "</td>
-                            <td class='border'>" . $row['email'] . "</td>
-                            <td class='border'>" . $row['gender'] . "</td>
-                            <td class='border'>" . $row['phone'] . "</td>
-                            <td class='border'>" . $row['speciality'] . "</td>
-                            <td class='border'>" . $row['salary'] . "</td>
-                            <td class='border'>" . $row['data_reg'] . "</td>
-                            <td class='border' colspan='2'>
+                            <td class='border p-2 text-lg font-medium'>" . $row['id'] . "</td>
+                            <td class='border p-2 text-lg font-medium'>" . $row['firstname'] . "</td>
+                            <td class='border p-2 text-lg font-medium'>" . $row['surname'] . "</td>
+                            <td class='border p-2 text-lg font-medium'>" . $row['username'] . "</td>
+                            <td class='border p-2 text-lg font-medium'>" . $row['email'] . "</td>
+                            <td class='border p-2 text-lg font-medium'>" . $row['gender'] . "</td>
+                            <td class='border p-2 text-lg font-medium'>" . $row['phone'] . "</td>
+                            <td class='border p-2 text-lg font-medium'>" . $row['speciality'] . "</td>
+                            <td class='border p-2 text-lg font-medium'>" . $row['salary'] . "</td>
+                            <td class='border p-2 text-lg font-medium'>" . $row['data_reg'] . "</td>
+                            <td class='border p-2' colspan='2'>
                                 <a href='edit.php?id=" . $row['id'] . "'>
                                     <button class='inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-teal-500 text-white hover:bg-teal-600 w-auto'>Edit</button>
                                 </a>

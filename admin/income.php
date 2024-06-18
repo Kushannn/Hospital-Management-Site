@@ -11,7 +11,7 @@ session_start();
     <title>Total Income</title>
 </head>
 
-<body>
+<body class="overflow-hidden">
     <?php
     include("../include/header.php");
     include("../include/connection.php");
@@ -33,13 +33,13 @@ session_start();
                     $res = mysqli_query($connect, $query);
                     $output = "";
                     $output .= "
-                        <table class='w-full max-w-full mb-4 bg-transparent'>
-                            <tr class='border font-bold'>
-                                <td class='border'>ID</td>
-                                <td class='border'>Doctor</td>
-                                <td class='border'>Patient</td>
-                                <td class='border'>Date Discharged</td>
-                                <td class='border'>Fee</td>
+                        <table class='w-full max-w-full mb-4 bg-transparent '>
+                            <tr class='border font-bold bg-blue-400 text-white text-lg'>
+                                <td class='border p-3'>ID</td>
+                                <td class='border p-3'>Doctor</td>
+                                <td class='border p-3'>Patient</td>
+                                <td class='border p-3'>Date Discharged</td>
+                                <td class='border p-3'>Fee</td>
                     ";
 
                     if (mysqli_num_rows($res) < 1) {
@@ -56,11 +56,11 @@ session_start();
 
                         $output .= "
                             <tr>
-                                <td>" . $row['id'] . "</td>
-                                <td>" . $row['doctor'] . "</td>
-                                <td>" . $row['patient'] . "</td>
-                                <td>" . $row['date_discharge'] . "</td>
-                                <td>" . $row['amount_paid'] . "</td>
+                                <td class='border p-3 font-medium text-lg'>" . $row['id'] . "</td>
+                                <td class='border p-3 font-medium text-lg'>" . $row['doctor'] . "</td>
+                                <td class='border p-3 font-medium text-lg'>" . $row['patient'] . "</td>
+                                <td class='border p-3 font-medium text-lg'>" . $row['date_discharge'] . "</td>
+                                <td class='border p-3 font-medium text-lg'>" . $row['amount_paid'] . "</td>
                         ";
                     }
 

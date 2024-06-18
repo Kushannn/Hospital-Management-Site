@@ -42,13 +42,14 @@
 
                     $output .= "
                         <table class='w-full max-w-full mb-4 bg-transparent'>
-                            <tr class='border font-bold text-lg'>
-                                <td class='border'>ID</td>
-                                <td class='border'>Doctor</td>
-                                <td class='border'>Patient</td>
-                                <td class='border'>Date Discharge</td>
-                                <td class='border'>Amount Paid</td>
-                                <td class='border'>Description</td>
+                            <tr class='border font-bold text-lg bg-blue-400'>
+                                <td class='border p-2'>ID</td>
+                                <td class='border p-2'>Doctor</td>
+                                <td class='border p-2'>Patient</td>
+                                <td class='border p-2'>Date Discharge</td>
+                                <td class='border p-2'>Amount Paid</td>
+                                <td class='border p-2'>Description</td>
+                                <td class='border p-2'>Action</td>
                             </tr>
                     ";
 

@@ -11,7 +11,7 @@ session_start();
     <title>Total Appointments</title>
 </head>
 
-<body>
+<body class="overflow-hidden">
 
     <?php
     include("../include/header.php");
@@ -37,17 +37,17 @@ session_start();
                     $output = "";
 
                     $output .= "
-                        <table class='w-full max-w-full mb-4 bg-transparent'>
-                            <tr class='border font-bold text-lg'>
-                                <td class='border'>ID</td>
-                                <td class='border'>FirstName</td>
-                                <td class='border'>LastName</td>
-                                <td class='border'>Gender</td>
-                                <td class='border'>Phone</td>
-                                <td class='border'>Appointment Date</td>
-                                <td class='border'>Symptoms</td>
-                                <td class='border'>Date Booked</td>
-                                <td class='border'>Action</td>
+                        <table class='w-full max-w-full mb-4 bg-transparent shadow-md text-lg font-medium'>
+                            <tr class='border font-bold text-lg bg-blue-400'>
+                                <th class='border p-2 text-lg'>ID</th>
+                                <th class='border p-2 text-lg'>FirstName</th>
+                                <th class='border p-2 text-lg'>LastName</th>
+                                <th class='border p-2 text-lg'>Gender</th>
+                                <th class='border p-2 text-lg'>Phone</th>
+                                <th class='border p-2 text-lg'>Appointment Date</th>
+                                <th class='border p-2 text-lg'>Symptoms</th>
+                                <th class='border p-2 text-lg'>Date Booked</th>
+                                <th class='border p-2 text-lg'>Action</th>
                             </tr>
                     ";
 
@@ -65,15 +65,15 @@ session_start();
 
                         $output .= "
                             <tr class='border'>
-                                <td class='border'>" . $row['id'] . "</td>
-                                <td class='border'>" . $row['firstname'] . "</td>
-                                <td class='border'>" . $row['surname'] . "</td>
-                                <td class='border'>" . $row['gender'] . "</td>
-                                <td class='border'>" . $row['phone'] . "</td>
-                                <td class='border'>" . $row['appointment_date'] . "</td>
-                                <td class='border'>" . $row['symptoms'] . "</td>
-                                <td class='border'>" . $row['date_booked'] . "</td>
-                                <td class='border'>
+                                <td class='border p-2 text-lg font-medium'>" . $row['id'] . "</td>
+                                <td class='border p-2 text-lg font-medium'>" . $row['firstname'] . "</td>
+                                <td class='border p-2 text-lg font-medium'>" . $row['surname'] . "</td>
+                                <td class='border p-2 text-lg font-medium'>" . $row['gender'] . "</td>
+                                <td class='border p-2 text-lg font-medium'>" . $row['phone'] . "</td>
+                                <td class='border p-2 text-lg font-medium'>" . $row['appointment_date'] . "</td>
+                                <td class='border p-2 text-lg font-medium'>" . $row['symptoms'] . "</td>
+                                <td class='border p-2 text-lg font-medium'>" . $row['date_booked'] . "</td>
+                                <td class='border p-2 text-lg font-medium'>
                                     <a href='./discharge.php?id=" . $row['id'] . "'>
                                         <button class='inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-teal-500 text-white hover:bg-teal-600'>Check</button>
                                     </a>

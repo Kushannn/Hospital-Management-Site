@@ -50,7 +50,7 @@ session_start();
     </style>
 </head>
 
-<body class="font-poppins">
+<body class="font-poppins overflow-hidden">
     <?php
     include("../include/header.php");
     include("../include/connection.php");
@@ -175,14 +175,14 @@ session_start();
                                         ?>
                                     </div>
                                     <div class="mb-4">
-                                        <label for="">Username</label>
-                                        <input type="text" name="uname" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" autocomplete="off">
+                                        <label class="font-medium text-xl">Username</label>
+                                        <input type="text" name="uname" class="shadow block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" autocomplete="off">
                                     </div>
                                     <div class="mb-4">
-                                        <label for="">Password</label>
+                                        <label class="font-medium text-xl">Password</label>
                                         <input type="password" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" pattern=" (?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" id="psw" name="psw">
 
-                                        <div id="message">
+                                        <div id="message" class="rounded-xl">
                                             <h3>Password must contain the following:</h3>
                                             <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
                                             <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
@@ -191,7 +191,7 @@ session_start();
                                         </div>
                                     </div>
                                     <div class="mb-4">
-                                        <label for="">Add Admin Picture</label>
+                                        <label class="font-medium text-xl">Add Admin Picture</label>
                                         <input type="file" name="img" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded cursor-pointer" accept="image/png, image/jpeg">
                                     </div>
 

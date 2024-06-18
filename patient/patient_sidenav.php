@@ -21,13 +21,13 @@
         <a href="patient_profile.php" class="relative block py-3 px-6 -mb-px border border-r-0 border-l-0 border-gray-300 no-underline w-full bg-blue-400 text-white md:transform md:transition md:duration-500 md:hover:scale-110 md:h-16 md:text-lg transform transition duration-500 hover:scale-110 ">
             Profile
         </a>
-        <a href="doctors.php" class="relative block py-1 px-6 -mb-px border border-r-0 border-l-0 border-gray-300 no-underline w-full bg-blue-400 text-white transform transition duration-500 hover:scale-110 h-16 text-lg">
+        <a href="./appointment.php" class="relative block py-1 px-6 -mb-px border border-r-0 border-l-0 border-gray-300 no-underline w-full bg-blue-400 text-white transform transition duration-500 hover:scale-110 h-16 text-lg">
             Book Appointments
         </a>
-        <a href="" class="relative block py-3 px-6 -mb-px border border-r-0 border-l-0 border-gray-300 no-underline w-full bg-blue-400 text-white transform transition duration-500 hover:scale-110 h-16 text-lg">
+        <!-- <a href="" class="relative block py-3 px-6 -mb-px border border-r-0 border-l-0 border-gray-300 no-underline w-full bg-blue-400 text-white transform transition duration-500 hover:scale-110 h-16 text-lg">
             Reports
-        </a>
-        <a href="" class="relative block py-3 px-6 -mb-px border border-r-0 border-l-0 border-gray-300 no-underline w-full bg-blue-400 text-white transform transition duration-500 hover:scale-110 h-16 text-lg">
+        </a> -->
+        <a href="./invoice.php" class="relative block py-3 px-6 -mb-px border border-r-0 border-l-0 border-gray-300 no-underline w-full bg-blue-400 text-white transform transition duration-500 hover:scale-110 h-16 text-lg">
             Invoice
         </a>
     </div>

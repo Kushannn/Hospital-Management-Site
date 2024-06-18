@@ -62,7 +62,7 @@
                             ?>
                             <form method="post">
                                 <label class="text-lg font-semibold ">Enter Doctor's Salary</label>
-                                <input type="number" name="salary" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" autocomplete="off" placeholder="Enter Salary" value="<?php echo $row['salary']; ?>">
+                                <input type="number" name="salary" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded shadow-md" autocomplete="off" placeholder="Enter Salary" value="<?php echo $row['salary']; ?>">
                                 <input type="submit" name="update" class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-teal-500 text-white hover:bg-teal-600 my-6" value="Update Salary">
 
                             </form>
@@ -73,6 +73,15 @@
         </div>
     </div>
 
+
+
+
+
+    <script>
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+    </script>
 </body>
 
 </html>

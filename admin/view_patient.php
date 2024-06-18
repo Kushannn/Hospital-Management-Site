@@ -53,44 +53,44 @@ session_start();
                                 echo "<img src='../patient/img/" . $row['profile'] . "' alt='' class='md:w-full pr-4 pl-4 my-2' height='250px'>";
                                 ?>
 
-                                <table class="w-full max-w-full mb-4 bg-transparent">
-                                    <tr class="border">
+                                <table class='w-full max-w-full mb-4 bg-transparent shadow-xl'>
+                                    <tr class='border bg-blue-400 text-white p-4'>
                                         <th class="text-center" colspan="2">Details</th>
                                     </tr>
 
                                     <tr class="border">
-                                        <td class="border">FirstName</td>
-                                        <td class="border"><?php echo $row['firstname']; ?> </td>
+                                        <td class="border p-2">FirstName</td>
+                                        <td class="border p-2"><?php echo $row['firstname']; ?> </td>
                                     </tr>
 
                                     <tr class="border">
-                                        <td class="border">LastName</td>
-                                        <td class="border"><?php echo $row['surname']; ?> </td>
+                                        <td class="border p-2">LastName</td>
+                                        <td class="border p-2"><?php echo $row['surname']; ?> </td>
                                     </tr>
 
                                     <tr class="border">
-                                        <td class="border">Username</td>
-                                        <td class="border"><?php echo $row['username']; ?> </td>
+                                        <td class="border p-2">Username</td>
+                                        <td class="border p-2"><?php echo $row['username']; ?> </td>
                                     </tr>
 
                                     <tr class="border">
-                                        <td class="border">Email</td>
-                                        <td class="border"><?php echo $row['email']; ?> </td>
+                                        <td class="border p-2">Email</td>
+                                        <td class="border p-2"><?php echo $row['email']; ?> </td>
                                     </tr>
 
                                     <tr class="border">
-                                        <td class="border">Phone</td>
-                                        <td class="border"><?php echo $row['phone']; ?> </td>
+                                        <td class="border p-2">Phone</td>
+                                        <td class="border p-2"><?php echo $row['phone']; ?> </td>
                                     </tr>
 
                                     <tr class="border">
-                                        <td class="border">Gender</td>
-                                        <td class="border"><?php echo $row['gender']; ?> </td>
+                                        <td class="border p-2">Gender</td>
+                                        <td class="border p-2"><?php echo $row['gender']; ?> </td>
                                     </tr>
 
                                     <tr class="border">
-                                        <td class="border">Date Reg.</td>
-                                        <td class="border"><?php echo $row['date_reg']; ?> </td>
+                                        <td class="border p-2">Date Reg.</td>
+                                        <td class="border p-2"><?php echo $row['date_reg']; ?> </td>
                                     </tr>
 
                                 </table>

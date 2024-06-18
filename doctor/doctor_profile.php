@@ -58,7 +58,7 @@ error_reporting(0);
                                         ?>
                                         <div class="mt-8 ">
                                             <label class="text-2xl font-lg font-bold">UPDATE PROFILE</label>
-                                            <input type="file" name="img" class="block appearance-none w-full py-1 px-2 my-4 text-base leading-normal bg-white text-gray-800 border-2 border-gray-600 rounded">
+                                            <input type="file" name="img" class="block appearance-none w-full py-1 px-2 my-4 text-base leading-normal bg-white text-gray-800 border-2 border-gray-600 rounded" accept="image/png, image/jpeg">
                                         </div>
                                         <input type="submit" name="upload" value="Update" class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-[#0D9276]  text-white hover:green-600" accept="image/png, image/jpeg">
                                     </form>
@@ -120,6 +120,7 @@ error_reporting(0);
 
                                         $uname = $_POST['uname'];
                                         if (empty($uname)) {
+                                            echo " <h5 class='relative block w-full p-4 text-base leading-5 text-white bg-red-500 rounded-lg opacity-100 mt-8'>Please Enter Username</h5>";
                                         } else {
                                             $query = "UPDATE doctors SET username='$uname' WHERE username='$doc'";
 
@@ -150,8 +151,13 @@ error_reporting(0);
                                         $row = mysqli_fetch_array($ols);
 
                                         if ($old != $row['password']) {
-                                        } elseif (empty($new)) {
+                                            echo " <h5 class='relative block w-full p-4 text-base leading-5 text-white bg-red-500 rounded-lg opacity-100 mt-8'>Please Enter Valid Old Password</h5>";
+                                        } else if (empty($new)) {
+                                            echo " <h5 class='relative block w-full p-4 text-base leading-5 text-white bg-red-500 rounded-lg opacity-100 mt-8'>Please Enter New Password</h5>";
+                                        } else if (empty($old)) {
+                                            echo " <h5 class='relative block w-full p-4 text-base leading-5 text-white bg-red-500 rounded-lg opacity-100 mt-8'>Please Old Password</h5>";
                                         } else if ($con != $new) {
+                                            echo " <h5 class='relative block w-full p-4 text-base leading-5 text-white bg-red-500 rounded-lg opacity-100 mt-8'>Both Passwords Do Not Match</h5>";
                                         } else {
                                             $query = "UPDATE doctors SET password='$new' WHERE username='$doc'";
                                             mysqli_query($connect, $query);

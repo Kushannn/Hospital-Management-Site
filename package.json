@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "@preline/carousel": "^2.1.0"
   }
 }

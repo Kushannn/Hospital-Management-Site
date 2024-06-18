@@ -16,7 +16,7 @@ session_start();
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 
-<body class="font-poppins">
+<body class="font-poppins overflow-hidden">
     <?php
     include("../include/header.php");
     include("../include/connection.php")
@@ -33,7 +33,7 @@ session_start();
 
                 </div>
                 <div class="md:w-4/5 md:pr-4 md:pl-4">
-                    <h4 class="my-5 font-bold text-4xl">Admin Dashboard</h4>
+                    <h4 class="my-5 font-bold text-4xl underline">Admin Dashboard</h4>
                     <div class="md:w-full md:pr-4 md:pl-4 my-5">
                         <div class="flex flex-wrap ">
                             <div class="md:w-80 w-40 pr-4 pl-4 bg-[#41B3A3] md:h-64 mx-1 font-bold md:text-4xl text-xl my-2 font static transform transition duration-500 h-44 hover:scale-110">
@@ -166,7 +166,7 @@ session_start();
                                             $row = mysqli_fetch_array($in);
                                             $inc = $row['profit'];
                                             ?>
-                                            <h5 class=" pt-6 text-6xl"><?php echo "₹" . $inc; ?></h5>
+                                            <h5 class=" pt-6 text-4xl"><?php echo "₹" . $inc; ?></h5>
                                             <h5 class="pt-10">Total</h5>
                                             <h5>Income</h5>
                                         </div>

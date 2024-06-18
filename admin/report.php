@@ -32,13 +32,13 @@ session_start();
                     $output = "";
 
                     $output .= "
-                        <table class='w-full max-w-full mb-4 bg-transparent'>
-                            <tr class='border'>
-                                <td class='border'>ID</td>
-                                <td class='border'>Title</td>
-                                <td class='border'>Message</td>
-                                <td class='border'>UserName</td>
-                                <td class='border'>Date_send</td>
+                        <table class='w-full max-w-full mb-4 bg-transparent shadow-md'>
+                            <tr class='border bg-blue-400 text-white'>
+                                <th class='border p-2 text-lg'>ID</th>
+                                <th class='border p-2 text-lg'>Title</th>
+                                <th class='border p-2 text-lg'>Message</th>
+                                <th class='border p-2 text-lg'>UserName</th>
+                                <th class='border p-2 text-lg'>Date sent</th>
                             </tr>
                     ";
 
@@ -56,11 +56,11 @@ session_start();
 
                         $output .= "
                             <tr class='border'>
-                                <td class='border'>" . $row['id'] . "</td>
-                                <td class='border'>" . $row['title'] . "</td>
-                                <td class='border'>" . $row['message'] . "</td>
-                                <td class='border'>" . $row['username'] . "</td>
-                                <td class='border'>" . $row['date_send'] . "</td>
+                                <td class='border p-3 font-medium text-lg'>" . $row['id'] . "</td>
+                                <td class='border p-3 font-medium text-lg'>" . $row['title'] . "</td>
+                                <td class='border p-3 font-medium text-lg'>" . $row['message'] . "</td>
+                                <td class='border p-3 font-medium text-lg'>" . $row['username'] . "</td>
+                                <td class='border p-3 font-medium text-lg'>" . $row['date_send'] . "</td>
                                 
                             </tr>
                         ";

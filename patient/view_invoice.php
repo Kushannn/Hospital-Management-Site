@@ -9,7 +9,7 @@
     <title>View Invoice</title>
 </head>
 
-<body>
+<body class="overflow-hidden">
 
     <?php
     include("../include/header.php");
@@ -48,8 +48,8 @@
                                 ?>
 
                                 <table class="w-full max-w-full mb-4 bg-transparent">
-                                    <tr class="border">
-                                        <th colspan="2" class="text-center">
+                                    <tr class="border bg-blue-400 text-white">
+                                        <th colspan="2" class="text-center p-4 text-lg font-bold">
                                             Invoice Details
                                         </th>
                                     </tr>

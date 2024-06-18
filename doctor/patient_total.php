@@ -11,7 +11,7 @@ session_start();
     <title>Total Patients</title>
 </head>
 
-<body>
+<body class="overflow-hidden">
     <?php
     include("../include/header.php");
     include("../include/connection.php");
@@ -34,16 +34,17 @@ session_start();
                     $output = "";
 
                     $output .= "
-                        <table class='w-full max-w-full mb-4 bg-transparent'>
-                            <tr class='border'>
-                                <td class='border'>ID</td>
-                                <td class='border'>FirstName</td>
-                                <td class='border'>LastName</td>
-                                <td class='border'>UserName</td>
-                                <td class='border'>Email</td>
-                                <td class='border'>Phone</td>
-                                <td class='border'>Gender</td>
-                                <td class='border'>Date Reg.</td>
+                        <table class='w-full max-w-full mb-4 bg-transparent shadow-md'>
+                            <tr class='border bg-blue-400 text-white'>
+                                <th class='border p-3 text-lg'>ID</th>
+                                <th class='border p-3 text-lg'>FirstName</th>
+                                <th class='border p-3 text-lg'>LastName</th>
+                                <th class='border p-3 text-lg'>UserName</th>
+                                <th class='border p-3 text-lg'>Email</th>
+                                <th class='border p-3 text-lg'>Phone</th>
+                                <th class='border p-3 text-lg'>Gender</th>
+                                <th class='border p-3 text-lg'>Date Reg.</th>
+                                <th class='border p-3 text-lg'>Action</th>
                             </tr>
                     ";
 
@@ -61,15 +62,15 @@ session_start();
 
                         $output .= "
                             <tr class='border'>
-                                <td class='border'>" . $row['id'] . "</td>
-                                <td class='border'>" . $row['firstname'] . "</td>
-                                <td class='border'>" . $row['surname'] . "</td>
-                                <td class='border'>" . $row['username'] . "</td>
-                                <td class='border'>" . $row['email'] . "</td>
-                                <td class='border'>" . $row['phone'] . "</td>
-                                <td class='border'>" . $row['gender'] . "</td>
-                                <td class='border'>" . $row['date_reg'] . "</td>
-                                <td class='border'>
+                                <td class='border p-3 text-lg font-medium'>" . $row['id'] . "</td>
+                                <td class='border p-3 text-lg font-medium'>" . $row['firstname'] . "</td>
+                                <td class='border p-3 text-lg font-medium'>" . $row['surname'] . "</td>
+                                <td class='border p-3 text-lg font-medium'>" . $row['username'] . "</td>
+                                <td class='border p-3 text-lg font-medium'>" . $row['email'] . "</td>
+                                <td class='border p-3 text-lg font-medium'>" . $row['phone'] . "</td>
+                                <td class='border p-3 text-lg font-medium'>" . $row['gender'] . "</td>
+                                <td class='border p-3 text-lg font-medium'>" . $row['date_reg'] . "</td>
+                                <td class='border p-3 text-lg font-medium'>
                                     <a href='./view_patient.php?id=" . $row['id'] . "'>
                                         <button class='inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-teal-500 text-white hover:bg-teal-600'>View</button>
                                     </a>

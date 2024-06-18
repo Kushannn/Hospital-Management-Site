@@ -27,9 +27,9 @@
         <a href="./appointment.php" class="relative block py-3 px-6 -mb-px border border-r-0 border-l-0 border-gray-300 no-underline w-full bg-blue-400 text-white transform transition duration-500 hover:scale-110 h-16 text-lg">
             Appointments
         </a>
-        <a href="" class="relative block py-3 px-6 -mb-px border border-r-0 border-l-0 border-gray-300 no-underline w-full bg-blue-400 text-white transform transition duration-500 hover:scale-110 h-16 text-lg">
+        <!-- <a href="" class="relative block py-3 px-6 -mb-px border border-r-0 border-l-0 border-gray-300 no-underline w-full bg-blue-400 text-white transform transition duration-500 hover:scale-110 h-16 text-lg">
             Reports
-        </a>
+        </a> -->
     </div>
     <!--sidebar ends-->
 </body>

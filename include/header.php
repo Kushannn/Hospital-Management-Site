@@ -18,7 +18,9 @@
     <div class="flex justify-between items-center ">
       <span class="text-2xl font-[Poppins] cursor-pointer">
         <!-- Hospital Management System -->
-        <img src="https://www.hospitalmanagementasia.com/wp-content/uploads/2022/08/Hospital-Management-Logo-Big-PNG.png" alt="image here" class="mix-blend-darken h-12">
+        <a href="../home.php">
+          <img src="https://www.hospitalmanagementasia.com/wp-content/uploads/2022/08/Hospital-Management-Logo-Big-PNG.png" alt="image here" class="mix-blend-darken h-12">
+        </a>
       </span>
 
       <span class="text-3xl cursor-pointer mx-2 md:hidden block">
@@ -68,7 +70,7 @@
         echo '
        
       <li class="mx-4 my-6 md:my-0">
-        <a href="index.php"  class="text-xl hover:text-cyan-500 duration-500">HOME</a>
+        <a href="home.php"  class="text-xl hover:text-cyan-500 duration-500">HOME</a>
       </li>
       <li class="mx-4 my-6 md:my-0">
         <a href="#Service" class="text-xl hover:text-cyan-500 duration-500">SERVICE</a>

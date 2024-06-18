@@ -59,7 +59,7 @@ session_start();
                                     </a>
                                     <a href="./appointment.php">
                                         <div class="flex justify-center items-center">
-                                            <img src="../images/admin.webp" alt="" class="pt-6">
+                                            <img src="../images/appointment.png" alt="" class="pt-6">
                                         </div>
                                     </a>
                                 </div>
@@ -76,7 +76,7 @@ session_start();
                                     </a>
                                     <a href="./invoice.php">
                                         <div class="flex justify-center items-center">
-                                            <img src="../images/admin.webp" alt="" class="pt-8">
+                                            <img src="../images/invoice.jpeg" alt="" class="pt-8">
                                         </div>
                                     </a>
                                 </div>

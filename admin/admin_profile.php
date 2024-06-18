@@ -73,7 +73,7 @@ session_start();
                                     <br>
                                     <div class="mt-10 ">
                                         <label class="text-2xl font-lg font-bold">UPDATE PROFILE</label>
-                                        <input type="file" name="profile" class="block appearance-none w-full py-1 px-2 my-4 text-base leading-normal bg-white text-gray-800 border-2 border-gray-600 rounded">
+                                        <input type="file" name="profile" class="block appearance-none w-full py-1 px-2 my-4 text-base leading-normal bg-white text-gray-800 border-2 border-gray-600 rounded" accept="image/png, image/jpeg">
                                     </div>
                                     <br>
                                     <input type="submit" name="update" value="UPDATE" class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-[#0D9276]     text-white hover:green-600">
